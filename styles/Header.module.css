@@ -1,0 +1,31 @@
+.header {
+	background: var(--main-bg-color-inactive);
+	height: var(--header-height);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: var(--main-font-size);
+}
+
+.header__nav {
+	display: flex;
+}
+
+.header__nav__item {
+	padding: 15px 20px;
+	cursor: pointer;
+	user-select: none;
+	background: var(--main-bg-color-inactive);
+	transition: all 0.2s ease;
+	line-height: 1;
+}
+
+.header__nav__item.current {
+	background: var(--main-bg-color-active);
+	color: var(--main-color-active);
+}
+
+.header__nav__item:hover {
+	color: var(--main-color-active);
+	background: var(--main-bg-color-active);
+}
